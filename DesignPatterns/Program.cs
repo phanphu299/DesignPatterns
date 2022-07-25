@@ -110,9 +110,46 @@ void ShowFluentPattern()
 
 void ShowSingletonPattern()
 {
-    Singleton fromTeachaer = Singleton.GetInstance;
-    fromTeachaer.ShowMessage("From Teacher");
+    Parallel.Invoke(
+                () => PrintTeacherDetailsEager(),
+                () => PrintStudentdetailsEager()
+                );
+    //Singleton fromTeachaer = Singleton.GetInstance;
+    //fromTeachaer.ShowMessage("From Teacher");
+    //Singleton fromStudent = Singleton.GetInstance;
+    //fromStudent.ShowMessage("From Student");
+}
+
+void PrintTeacherDetails()
+{
+    Singleton fromTeacher = Singleton.GetInstance;
+    fromTeacher.ShowMessage("From Teacher");
+}
+void PrintStudentdetails()
+{
     Singleton fromStudent = Singleton.GetInstance;
+    fromStudent.ShowMessage("From Student");
+}
+
+void PrintTeacherDetailsLock()
+{
+    SingletonWithLock fromTeacher = SingletonWithLock.GetInstance;
+    fromTeacher.ShowMessage("From Teacher");
+}
+void PrintStudentdetailsLock()
+{
+    SingletonWithLock fromStudent = SingletonWithLock.GetInstance;
+    fromStudent.ShowMessage("From Student");
+}
+
+void PrintTeacherDetailsEager()
+{
+    EagerLoadingSingleton fromTeacher = EagerLoadingSingleton.GetInstance;
+    fromTeacher.ShowMessage("From Teacher");
+}
+void PrintStudentdetailsEager()
+{
+    EagerLoadingSingleton fromStudent = EagerLoadingSingleton.GetInstance;
     fromStudent.ShowMessage("From Student");
 }
 

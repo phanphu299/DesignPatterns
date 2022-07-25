@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\DesignPatterns\\DP-git\\DesignPatterns\\DesignPatterns.csproj": {}
+    "C:\\Users\\phuphan\\source\\repos\\DesignPatterns\\DesignPatterns\\DesignPatterns.csproj": {}
   },
   "projects": {
-    "D:\\Work\\DesignPatterns\\DP-git\\DesignPatterns\\DesignPatterns.csproj": {
+    "C:\\Users\\phuphan\\source\\repos\\DesignPatterns\\DesignPatterns\\DesignPatterns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\DesignPatterns\\DP-git\\DesignPatterns\\DesignPatterns.csproj",
+        "projectUniqueName": "C:\\Users\\phuphan\\source\\repos\\DesignPatterns\\DesignPatterns\\DesignPatterns.csproj",
         "projectName": "DesignPatterns",
-        "projectPath": "D:\\Work\\DesignPatterns\\DP-git\\DesignPatterns\\DesignPatterns.csproj",
-        "packagesPath": "C:\\Users\\phant\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\DesignPatterns\\DP-git\\DesignPatterns\\obj\\",
+        "projectPath": "C:\\Users\\phuphan\\source\\repos\\DesignPatterns\\DesignPatterns\\DesignPatterns.csproj",
+        "packagesPath": "C:\\Users\\phuphan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phuphan\\source\\repos\\DesignPatterns\\DesignPatterns\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\phant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phuphan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

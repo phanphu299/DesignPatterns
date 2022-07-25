@@ -3,7 +3,7 @@
     internal sealed class Singleton
     {
         private static int counter = 0;
-        private static Singleton _instance;
+        private static Singleton _instance = null;
         public static Singleton GetInstance
         {
             get
