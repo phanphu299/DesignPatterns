@@ -5,9 +5,11 @@ using DesignPatterns.CreationPatterns.Factory;
 using DesignPatterns.CreationPatterns.FactoryMethod;
 using DesignPatterns.CreationPatterns.Fluent;
 using DesignPatterns.CreationPatterns.Singleton;
+using DesignPatterns.StructuralPatterns.Adapter;
+using DesignPatterns.StructuralPatterns.Facade;
 
 Console.WriteLine("Hello, World!");
-ShowSingletonPattern();
+ShowFacadePattern();
 
 #region CREATION_PATTERNS
 
@@ -97,7 +99,7 @@ void ShowFluentPattern()
 
     Console.WriteLine("--------------------------------------");
 
-    Employee ronaldo = new();
+    DesignPatterns.CreationPatterns.Fluent.Employee ronaldo = new();
     ronaldo
         .WithName("Cr7")
         .LivingAt("England")
@@ -155,3 +157,27 @@ void PrintStudentdetailsEager()
 
 #endregion
 
+#region STRUCTURAL_PATTERNS
+
+void ShowAdapterPattern()
+{
+    string[,] employeesArray = new string[5, 4]
+            {
+                {"101","John","SE","10000"},
+                {"102","Smith","SE","20000"},
+                {"103","Dev","SSE","30000"},
+                {"104","Pam","SE","40000"},
+                {"105","Sara","SSE","50000"}
+            };
+
+    IAdapter adapter = new ProcessSalaryAdapter();
+    adapter.ProcessSalary(employeesArray);
+}
+
+void ShowFacadePattern()
+{
+    Order order = new();
+    order.PlaceOrder();
+}
+
+#endregion
